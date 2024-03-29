@@ -19,7 +19,7 @@ const Footer = () => {
           </p>
         </div>
         <p className="opacity-[30%] mt-[20px] self-end">
-          Website was made by Uliana Mykoliuk in 2024.
+          Website was made by Uliana Mykoliuk in 2024. Designed by Kryston Schwarze
         </p>
       </div>
       <nav className="list-none grid gap-y-[30px] justify-self-end justify-items-end">
