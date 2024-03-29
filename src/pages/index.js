@@ -1,118 +1,78 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
+import Hero from "@/components/hero.component";
+import Header from "@/components/header.component";
+import HeroBgBottom from "@/components/hero-bottom.component";
+import NumberImageText from "@/components/number-img-txt.component";
+import HotelsImg from "@/assets/home/hotels.png";
+import FoodImg from "@/assets/home/food.png";
+import EntertainmentImg from "@/assets/home/bike.png";
+import Footer from "@/components/footer.component";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const content = [
+  {
+    title: "Пошук Готелю",
+    header: "Знайдімо прекрасне місце для ночівлі",
+    text: `Вибір ідеального місця для проживання відіграє важливу роль у
+    створенні незабутнього відпочинку. Наша колекція готелів та
+    будиночків ретельно підібрана, щоб задовольнити будь-які потреби та
+    бажання. Від затишних котеджів у горах до розкішних готелів з видом
+    на вершини – у нас ви знайдете ідеальний варіант, щоб зробити свою
+    подорож незабутньою.`,
+    img: HotelsImg,
+    link: "/",
+  },
+  {
+    title: "Смакота",
+    header: "Рекомендуємо спробувати місцеву кухню",
+    text: `Відчуйте смак гірської кухні у наших ресторанах та кафе, які 
+    пропонують автентичні страви з найсвіжіших інгредієнтів. Від 
+    традиційних гуцульських делікатесів до сучасних інтерпретацій 
+    місцевих страв, кожен пригощений стравами, що розкажуть вам історію 
+    цієї неповторної місцевої культури. Насолоджуйтеся атмосферою 
+    гостинності та смаками Карпат у наших закладах харчування.`,
+    img: FoodImg,
+    link: "/",
+  },
+  {
+    title: "Розваги",
+    header: "Шукаєте цікавий спосіб провести час?",
+    text: `Наша розмаїта підбірка розваг гарантує незабутні враження для 
+    кожного гостя. Від захоплюючих кінних прогулянок і веселих 
+    спа-джипінгів до адреналіну, що б'є через краєвидні квадроцикли та 
+    екстремальні канатні витяги, у нас є щось для кожного. Незалежно від 
+    вашого вибору, ми гарантуємо, що ваші дні будуть наповнені веселощами 
+    та захопленням.`,
+    img: EntertainmentImg,
+    link: "/",
+  },
+];
+
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/pages/index.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+    <>
+      <Header />
+      <Hero />
+      <HeroBgBottom />
+      <div className="grid gap-y-[200px] container mx-auto">
+        {content.map((contentItem, idx) => {
+          const number = idx < 9 ? "0" + (idx + 1) : idx + 1;
+          return (
+            <NumberImageText
+              number={number}
+              position={idx % 2 ? "inverted" : "normal"}
+              title={contentItem.title}
+              header={contentItem.header}
+              text={contentItem.text}
+              img={contentItem.img}
+              link={contentItem.link}
             />
-          </a>
-        </div>
+          );
+        })}
+        <Footer />
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </>
   );
 }

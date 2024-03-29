@@ -6,6 +6,21 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      padding: {
+        DEFAULT: "24px",
+        md: "36px",
+        xl: "50px",
+      },
+      maxWidth: {
+        DEFAULT: "420px",
+        sm: "420px",
+        md: "640px",
+        lg: "768px",
+        xl: "1024px",
+        "2xl": "1280px",
+      },
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
