@@ -1,8 +1,6 @@
-import Image from "next/image";
 import { Inter } from "next/font/google";
 import Hero from "@/components/hero.component";
 import Header from "@/components/header.component";
-import HeroBgBottom from "@/components/hero-bottom.component";
 import NumberImageText from "@/components/number-img-txt.component";
 import HotelsImg from "@/assets/home/hotels.png";
 import FoodImg from "@/assets/home/food.png";
@@ -22,7 +20,7 @@ const content = [
     на вершини – у нас ви знайдете ідеальний варіант, щоб зробити свою
     подорож незабутньою.`,
     img: HotelsImg,
-    link: "/",
+    link: "/hotels",
   },
   {
     title: "Смакота",
@@ -53,14 +51,14 @@ const content = [
 export default function Home() {
   return (
     <>
-      <Header />
+      <Header className="mt-[64px]" />
       <Hero />
-      <HeroBgBottom />
-      <div className="grid gap-y-[200px] container mx-auto">
+      <div className="grid gap-y-[200px] container mx-auto -mt-[256px] mb-[100px]">
         {content.map((contentItem, idx) => {
           const number = idx < 9 ? "0" + (idx + 1) : idx + 1;
           return (
             <NumberImageText
+              key={number}
               number={number}
               position={idx % 2 ? "inverted" : "normal"}
               title={contentItem.title}
