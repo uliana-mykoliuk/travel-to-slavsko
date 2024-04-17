@@ -35,6 +35,27 @@ body {
   background-image: linear-gradient(135deg, #0b1d26, transparent 60%);
 }
 
+
+
+.slider-container .slick-slide {
+  opacity: 0;
+  transition: opacity 0.75s linear;
+}
+
+.slick-slide.slick-active {
+  opacity: 1;
+}
+
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 .h-full__footer {
   height: calc(100vh - 198px - 64px);
 }

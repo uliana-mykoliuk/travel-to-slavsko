@@ -16,7 +16,7 @@ const Hero = ({
         <Image
           alt=""
           src={img}
-          className="w-full h-[110%] absolute -top-[10%] left-0"
+          className="w-full h-[110%] absolute -top-[10%] left-0 object-cover"
         />
         <div className="hero-gradient absolute top-0 left-0 w-full h-screen-500px" />
         <div className="bg-gradient-to-t from-[#0B1D26] to-transparent absolute bottom-0 left-0 w-full h-[500px]" />
