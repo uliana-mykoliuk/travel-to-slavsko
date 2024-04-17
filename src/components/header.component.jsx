@@ -11,7 +11,7 @@ export const navLinks = [
   },
   {
     label: "Розваги",
-    link: "entertainmant",
+    link: "entertainment",
   },
 ];
 

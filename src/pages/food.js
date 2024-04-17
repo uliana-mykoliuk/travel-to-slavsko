@@ -3,9 +3,6 @@ import Footer from "@/components/footer.component";
 import Hero from "@/components/hero.component";
 import HeroBg from "@/assets/food/food-bg.jpg";
 
-import Link from "next/link";
-import Image from "next/image";
-
 import RestaurantsSlider from "@/components/restaurants-slider.component";
 import { dishes } from "@/mocks/foods.mock";
 import ImageTextComponent from "@/components/image-text.component";

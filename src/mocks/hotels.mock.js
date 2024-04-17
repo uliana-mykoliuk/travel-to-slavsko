@@ -1,68 +1,81 @@
+import GlampingSlavskoImg from "@/assets/hotels/glamping-slavsko/glamping-slavsko.jpg";
 import GlampingSlavskoImg1 from "@/assets/hotels/glamping-slavsko/glamping-slavsko-01.jpg";
 import GlampingSlavskoImg2 from "@/assets/hotels/glamping-slavsko/glamping-slavsko-02.jpg";
 import GlampingSlavskoImg3 from "@/assets/hotels/glamping-slavsko/glamping-slavsko-03.jpg";
 import GlampingSlavskoImg4 from "@/assets/hotels/glamping-slavsko/glamping-slavsko-04.jpg";
 import GlampingSlavskoImg5 from "@/assets/hotels/glamping-slavsko/glamping-slavsko-05.jpg";
 
+import AgoraChaletImg from "@/assets/hotels/agora-chalet/agora-chalet.jpg";
 import AgoraChaletImg1 from "@/assets/hotels/agora-chalet/agora-chalet-01.jpg";
 import AgoraChaletImg2 from "@/assets/hotels/agora-chalet/agora-chalet-02.jpg";
 import AgoraChaletImg3 from "@/assets/hotels/agora-chalet/agora-chalet-03.jpg";
 import AgoraChaletImg4 from "@/assets/hotels/agora-chalet/agora-chalet-04.jpg";
 import AgoraChaletImg5 from "@/assets/hotels/agora-chalet/agora-chalet-05.jpg";
 
+import DvirKniazhoiKoronyImg from "@/assets/hotels/dvir-kniazhoyi-korony/dvir-kniazhoi-korony.jpg";
 import DvirKniazhoiKoronyImg1 from "@/assets/hotels/dvir-kniazhoyi-korony/dvir-kniazhoi-korony-01.jpg";
 import DvirKniazhoiKoronyImg2 from "@/assets/hotels/dvir-kniazhoyi-korony/dvir-kniazhoi-korony-02.jpg";
 import DvirKniazhoiKoronyImg3 from "@/assets/hotels/dvir-kniazhoyi-korony/dvir-kniazhoi-korony-03.jpg";
 import DvirKniazhoiKoronyImg4 from "@/assets/hotels/dvir-kniazhoyi-korony/dvir-kniazhoi-korony-04.jpg";
 import DvirKniazhoiKoronyImg5 from "@/assets/hotels/dvir-kniazhoyi-korony/dvir-kniazhoi-korony-05.jpg";
 
+import KovalskaSadybaImg from "@/assets/hotels/kovalska-sadyba/kovalska-sadyba.jpg";
 import KovalskaSadybaImg1 from "@/assets/hotels/kovalska-sadyba/kovalska-sadyba-01.jpg";
 import KovalskaSadybaImg2 from "@/assets/hotels/kovalska-sadyba/kovalska-sadyba-02.jpg";
 import KovalskaSadybaImg3 from "@/assets/hotels/kovalska-sadyba/kovalska-sadyba-03.jpg";
 import KovalskaSadybaImg4 from "@/assets/hotels/kovalska-sadyba/kovalska-sadyba-04.jpg";
 import KovalskaSadybaImg5 from "@/assets/hotels/kovalska-sadyba/kovalska-sadyba-05.jpg";
 
+import KarpatskyCaleidoskopImg from "@/assets/hotels/karpatsky-caleidoskop/karpatsky-caleidoskop.jpg";
 import KarpatskyCaleidoskopImg1 from "@/assets/hotels/karpatsky-caleidoskop/karpatsky-caleidoskop-01.jpg";
 import KarpatskyCaleidoskopImg2 from "@/assets/hotels/karpatsky-caleidoskop/karpatsky-caleidoskop-02.jpg";
 import KarpatskyCaleidoskopImg3 from "@/assets/hotels/karpatsky-caleidoskop/karpatsky-caleidoskop-03.jpg";
 import KarpatskyCaleidoskopImg4 from "@/assets/hotels/karpatsky-caleidoskop/karpatsky-caleidoskop-04.jpg";
 import KarpatskyCaleidoskopImg5 from "@/assets/hotels/karpatsky-caleidoskop/karpatsky-caleidoskop-05.jpg";
 
+import VillaAlpiykaImg from "@/assets/hotels/villa-alpiyka/villa-alpiyka.jpg";
 import VillaAlpiykaImg1 from "@/assets/hotels/villa-alpiyka/villa-alpiyka-01.jpg";
 import VillaAlpiykaImg2 from "@/assets/hotels/villa-alpiyka/villa-alpiyka-02.jpg";
 import VillaAlpiykaImg3 from "@/assets/hotels/villa-alpiyka/villa-alpiyka-03.jpg";
 import VillaAlpiykaImg4 from "@/assets/hotels/villa-alpiyka/villa-alpiyka-04.jpg";
 import VillaAlpiykaImg5 from "@/assets/hotels/villa-alpiyka/villa-alpiyka-05.jpg";
 
+import ChaletFilvarokImg from "@/assets/hotels/chalet-filvarok/chalet-filvarok.jpg";
 import ChaletFilvarokImg1 from "@/assets/hotels/chalet-filvarok/chalet-filvarok-01.jpg";
 import ChaletFilvarokImg2 from "@/assets/hotels/chalet-filvarok/chalet-filvarok-02.jpg";
 import ChaletFilvarokImg3 from "@/assets/hotels/chalet-filvarok/chalet-filvarok-03.jpg";
 import ChaletFilvarokImg4 from "@/assets/hotels/chalet-filvarok/chalet-filvarok-04.jpg";
 import ChaletFilvarokImg5 from "@/assets/hotels/chalet-filvarok/chalet-filvarok-05.jpg";
 
+import MiradorCottageImg from "@/assets/hotels/mirador-cottage/mirador-cottage.jpg";
 import MiradorCottageImg1 from "@/assets/hotels/mirador-cottage/mirador-cottage-01.jpg";
 import MiradorCottageImg2 from "@/assets/hotels/mirador-cottage/mirador-cottage-02.jpg";
 import MiradorCottageImg3 from "@/assets/hotels/mirador-cottage/mirador-cottage-03.jpg";
 import MiradorCottageImg4 from "@/assets/hotels/mirador-cottage/mirador-cottage-04.jpg";
 import MiradorCottageImg5 from "@/assets/hotels/mirador-cottage/mirador-cottage-05.jpg";
 
+import SadybaRoksaImg from "@/assets/hotels/sadyba-roksa/sadyba-roksa.jpg";
 import SadybaRoksaImg1 from "@/assets/hotels/sadyba-roksa/sadyba-roksa-01.jpg";
 import SadybaRoksaImg2 from "@/assets/hotels/sadyba-roksa/sadyba-roksa-02.jpg";
 import SadybaRoksaImg3 from "@/assets/hotels/sadyba-roksa/sadyba-roksa-03.jpg";
 import SadybaRoksaImg4 from "@/assets/hotels/sadyba-roksa/sadyba-roksa-04.jpg";
 import SadybaRoksaImg5 from "@/assets/hotels/sadyba-roksa/sadyba-roksa-05.jpg";
 
+import ChilloutzoneImg from "@/assets/hotels/chilloutzone/chilloutzone.jpg";
 import ChilloutzoneImg1 from "@/assets/hotels/chilloutzone/chilloutzone-01.jpg";
 import ChilloutzoneImg2 from "@/assets/hotels/chilloutzone/chilloutzone-02.jpg";
 import ChilloutzoneImg3 from "@/assets/hotels/chilloutzone/chilloutzone-03.jpg";
 import ChilloutzoneImg4 from "@/assets/hotels/chilloutzone/chilloutzone-04.jpg";
 import ChilloutzoneImg5 from "@/assets/hotels/chilloutzone/chilloutzone-05.jpg";
 
+import ZaharBerkutImg from "@/assets/hotels/zahar-berkut/zahar_berkut.jpg";
 import ZaharBerkutImg1 from "@/assets/hotels/zahar-berkut/zahar_berkut-01.jpg";
 import ZaharBerkutImg2 from "@/assets/hotels/zahar-berkut/zahar_berkut-02.jpg";
 import ZaharBerkutImg3 from "@/assets/hotels/zahar-berkut/zahar_berkut-03.jpg";
 import ZaharBerkutImg4 from "@/assets/hotels/zahar-berkut/zahar_berkut-04.jpg";
 import ZaharBerkutImg5 from "@/assets/hotels/zahar-berkut/zahar_berkut-05.jpg";
+
+import ForestHubImg from "@/assets/hotels/forest-hub/forest-hub.jpg"
 
 export const hotels = [
   {
@@ -74,7 +87,7 @@ export const hotels = [
       Найближчий аеропорт до помешкання SlavskoGlamping – Мiжнародний аеропорт «Львiв», що розташований за 136 км.    
       Це мiсце розташування особливо подобається парам – вони оцiнили його на 8,9 для поїздки удвох.`,
     address: "c. Славське, вул. Олени Степанiвни, 35a",
-    bgImg: "bg-glamping-slavsko",
+    bgImg: GlampingSlavskoImg,
     images: [
       GlampingSlavskoImg1,
       GlampingSlavskoImg2,
@@ -95,7 +108,7 @@ export const hotels = [
       На цiлодобовiй стiйцi реєстрацiї готелю з туристичним бюро гостям завжди нададуть вичерпну iнформацiю про навколишнi пам'ятки.    
       Це мiсце розташування особливо подобається парам – вони оцiнили його на 9,6 для поїздки удвох.`,
     address: "с. Волосянка, вул. Б. Хмельницького, 1",
-    bgImg: "bg-zahar-berkut",
+    bgImg: ZaharBerkutImg,
     images: [
       ZaharBerkutImg1,
       ZaharBerkutImg2,
@@ -115,7 +128,7 @@ export const hotels = [
       Найближчий аеропорт до помешкання AGORA Chalet – Мiжнародний аеропорт «Львiв», що розташований за 137 км.    
       Це мiсце розташування особливо подобається парам – вони оцiнили його на 9,1 для поїздки удвох.`,
     address: "c. Славське, вул. Олени Степанiвни, 36",
-    bgImg: "bg-agora",
+    bgImg: AgoraChaletImg,
     images: [
       AgoraChaletImg1,
       AgoraChaletImg2,
@@ -135,7 +148,7 @@ export const hotels = [
       Вiдстань вiд гостьового будинку "Ковальська садиба" до найближчого мiжнародного аеропорту Ужгорода становить 90 км.    
       Це мiсце розташування особливо подобається парам – вони оцiнили його на 9,6 для поїздки удвох.`,
     address: "c. Славське, вул. Сагайдачного, 8",
-    bgImg: "bg-kovalska-sadyba",
+    bgImg: KovalskaSadybaImg,
     images: [
       KovalskaSadybaImg1,
       KovalskaSadybaImg2,
@@ -154,7 +167,7 @@ export const hotels = [
       На територiї готелю починаються велосипеднi та пiшохiднi маршрути. Гостям пропонують примiщення для зберiгання лиж та оренду лижного спорядження.    
       Це мiсце розташування особливо подобається парам – вони оцiнили його на 9,4 для поїздки удвох.`,
     address: "c. Славське, вул. Архангельського, 9",
-    bgImg: "bg-sadyba-roksa",
+    bgImg: SadybaRoksaImg,
     images: [
       SadybaRoksaImg1,
       SadybaRoksaImg2,
@@ -174,7 +187,7 @@ export const hotels = [
       Trostyan Mountain is 4.1 km from Karpats'kyi Kalejdoskop, while Krokus is 5 km from the property.    
       Це мiсце розташування особливо подобається парам – вони оцiнили його на 9,2 для поїздки удвох.`,
     address: "c. Славське, вул. Шашкевича, 3а",
-    bgImg: "bg-karpatskyi-caleidoskop",
+    bgImg: KarpatskyCaleidoskopImg,
     images: [
       KarpatskyCaleidoskopImg1,
       KarpatskyCaleidoskopImg2,
@@ -193,7 +206,7 @@ export const hotels = [
       У гостьовому будинку пропонується оренда лижного спорядження та примiщенням для зберiгання лиж. В околицях вiлли створенi умови для рiзноманiтного активного вiдпочинку, зокрема лижного спорту, верхової їзди та велоспорту. Вiдстань вiд вiлли "Альпiйка" до Схiдницi становить 48 км, а до Поляни - 40 км.    
       Це мiсце розташування особливо подобається парам – вони оцiнили його на 9,3 для поїздки удвох.`,
     address: "c. Волосянка, вул. Б. Хмельницького, 15",
-    bgImg: "bg-villa-alpiyka",
+    bgImg: VillaAlpiykaImg,
     images: [
       VillaAlpiykaImg1,
       VillaAlpiykaImg2,
@@ -214,7 +227,7 @@ export const hotels = [
       В околицях можна зайнятися рiзними видами активного вiдпочинку, зокрема лижним спортом, велоспортом та верховою їздою. У комплексi облаштовано спiльний лаунж та iгрову кiмнату.
       Це мiсце розташування особливо подобається парам – вони оцiнили його на 9,0 для поїздки удвох.`,
     address: "c. Славське, вул. Устиновича, 153в",
-    bgImg: "bg-filvarok",
+    bgImg: ChaletFilvarokImg,
     images: [
       ChaletFilvarokImg1,
       ChaletFilvarokImg2,
@@ -234,7 +247,7 @@ export const hotels = [
       Найближчий аеропорт до помешкання Chilloutzonе - Будинок з безкоштовним джакузi та кiнотеатром – Мiжнародний аеропорт «Львiв», що розташований за 138 км.    
       Це мiсце розташування особливо подобається парам – вони оцiнили його на 10 для поїздки удвох.`,
     address: "c. Славське, вул. Лесi Українки",
-    bgImg: "bg-chilloutzone",
+    bgImg: ChilloutzoneImg,
     images: [
       ChilloutzoneImg1,
       ChilloutzoneImg2,
@@ -248,7 +261,7 @@ export const hotels = [
     id: 10,
     title: "Forest Hub",
     address: "c. Славське, вул. Волошина, 124",
-    bgImg: "bg-forest-hub",
+    bgImg: ForestHubImg,
   },
   {
     id: 11,
@@ -260,7 +273,7 @@ export const hotels = [
       Найближчий аеропорт до помешкання Mirador Cottage – Мiжнародний аеропорт «Львiв», що розташований за 137 км.    
       Це мiсце розташування особливо подобається парам – вони оцiнили його на 9,8 для поїздки удвох.`,
     address: "c. Славське, вул. Олени Степанiвни, 36a",
-    bgImg: "bg-mirador-cottage",
+    bgImg: MiradorCottageImg,
     images: [
       MiradorCottageImg1,
       MiradorCottageImg2,
@@ -280,7 +293,7 @@ export const hotels = [
       Найближчий аеропорт до помешкання Hotel Complex Dvir Kniazhoiy Korony – Мiжнародний аеропорт «Львiв», що розташований за 136 км.    
       Це мiсце розташування особливо подобається парам – вони оцiнили його на 9,2 для поїздки удвох.`,
     address: "c. Славське, вул. Олени Степанiвни, 29в",
-    bgImg: "bg-dvir-kniazhoyi-korony",
+    bgImg: DvirKniazhoiKoronyImg,
     images: [
       DvirKniazhoiKoronyImg1,
       DvirKniazhoiKoronyImg2,
