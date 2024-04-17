@@ -34,7 +34,7 @@ export default function Page() {
               <address className="text-accent">{address}</address>
               <p className="text-main text-[18px] mt-[15px]">{description}</p>
               <p className="text-[#cacaca] text-[14px] mt-[30px]">
-                Інформацію взято з сайту Booking.com в квітні 2024
+                Iнформацiю взято з сайту Booking.com в квiтнi 2024
               </p>
             </div>
             <div className="flex justify-between mt-[30px]">

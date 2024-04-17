@@ -4,7 +4,7 @@ import { navLinks } from "./header.component";
 const footerLinks = [
   {
     link: "/",
-    label: "Зв'яжіться з нами",
+    label: "Зв'яжiться з нами",
   },
 ];
 
@@ -17,7 +17,7 @@ const Footer = () => {
             SLAVSKO
           </p>
           <p className="mt-[10px] text-[18px] leading-[32px]">
-            Досліджуй красу вершин українських карпат разом з нами
+            Дослiджуй красу вершин українських карпат разом з нами
           </p>
         </div>
         <p className="opacity-[30%] mt-[10px] self-end">

@@ -34,7 +34,7 @@ const NumberImageText = ({
             <p className="text-[18px]">{text}</p>
             <Link href={link} className="flex items-center">
               <p className="text-[#FBD784] text-[18px] mr-[8px] leading-[18px]">
-                читати більше
+                читати бiльше
               </p>
               <span className="text-[#FBD784] text-[36px] leading-[36px]">
                 &rarr;
@@ -62,7 +62,7 @@ const NumberImageText = ({
             <p className="text-[18px]">{text}</p>
             <Link href={link} className="flex items-center">
               <p className="text-[#FBD784] text-[18px] mr-[8px] leading-[18px]">
-                читати більше
+                читати бiльше
               </p>
               <span className="text-[#FBD784] text-[36px] leading-[36px]">
                 &rarr;
