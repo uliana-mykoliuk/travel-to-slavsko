@@ -18,15 +18,17 @@ export default function Hotels() {
       />
       <div className="z-[1] relative py-[100px] -mt-[500px]">
         <div className="container mx-auto">
-          {dishes.map((dish, idx) => (
-            <ImageTextComponent
-              key={dish.id}
-              {...dish}
-              imgPosition={idx % 2 ? "right" : "left"}
-            />
-          ))}
+          <div className="grid gap-[100px] mb-[100px]">
+            {dishes.map((dish, idx) => (
+              <ImageTextComponent
+                key={dish.id}
+                {...dish}
+                imgPosition={idx % 2 ? "right" : "left"}
+              />
+            ))}
+          </div>
           <h2 className="font-bold text-[48px] leading-[70px] text-accent text-center mb-[50px]">
-            Вiдвiдай мiсцевi заклади <br/> i скуштуй смачну карпатську кухню
+            Вiдвiдай мiсцевi заклади <br /> i скуштуй смачну карпатську кухню
           </h2>
           <RestaurantsSlider />
         </div>

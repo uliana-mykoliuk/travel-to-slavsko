@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const ImageTextComponent = ({ title, text, img, imgPosition = "left" }) => {
   return imgPosition === "left" ? (
-    <section className="grid mx-auto grid-cols-[450px_auto] gap-x-[50px] mb-[100px] items-center">
+    <section className="grid mx-auto grid-cols-[450px_auto] gap-x-[50px] items-center">
       <div className="relative h-full min-h-[500px]">
         <Image
           src={img}
@@ -18,7 +18,7 @@ const ImageTextComponent = ({ title, text, img, imgPosition = "left" }) => {
       </div>
     </section>
   ) : (
-    <section className="grid mx-auto grid-cols-[auto_450px] gap-x-[50px] mb-[100px] items-center">
+    <section className="grid mx-auto grid-cols-[auto_450px] gap-x-[50px] items-center">
       <div className="">
         <h2 className="font-bold text-[64px] leading-[70px] text-accent">
           {title}

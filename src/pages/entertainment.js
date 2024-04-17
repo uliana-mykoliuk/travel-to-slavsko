@@ -24,10 +24,10 @@ export default function Entertainment() {
   var settings = {
     infinite: true,
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 4,
     autoplay: true,
     speed: 0,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 7000,
     beforeChange: handleBeforeChange,
   };
 
@@ -61,7 +61,7 @@ export default function Entertainment() {
                 форму відпочинку і насолодитися моментами спокою та гармонії в
                 обрамленні природи.`}
           />
-          <section className="slider-container mt-[100px]">
+          <section className="slider-container mt-[50px]">
             <Slider {...settings}>
               {restaurants.map((food, idx) => (
                 <Link
