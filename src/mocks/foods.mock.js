@@ -1,20 +1,21 @@
 import FoodAndMountainsImg from "@/assets/food/food-bg.jpg";
-import RestoranKarpatyImg from "@/assets/food/restoran-karpaty.jpg";
-import AspenImg from "@/assets/food/aspen.jpg";
-import LagunaKarpatImg from "@/assets/food/restoran-laguna-karpat.jpg";
-import KolybaZabavaImg from "@/assets/food/kolyba-zabava.jpg";
-import TheBarImg from "@/assets/food/the-bar.jpg";
-import MaksymImg from "@/assets/food/maksym.jpg";
-import HTrostianImg from "@/assets/food/h-trostian.jpg";
-import KolybaForelImg from "@/assets/food/kolyba-forel.jpg";
-import LoftSlavskoImg from "@/assets/food/loft-slavsko.jpg";
-import FoodieImg from "@/assets/food/foodie.jpg";
-import ChaletFilvarokImg from "@/assets/food/chalet-filvarok.jpg";
+import RestoranKarpatyImg from "@/assets/food/restaurants/restoran-karpaty.jpg";
+import AspenImg from "@/assets/food/restaurants/aspen.jpg";
+import LagunaKarpatImg from "@/assets/food/restaurants/restoran-laguna-karpat.jpg";
+import KolybaZabavaImg from "@/assets/food/restaurants/kolyba-zabava.jpg";
+import TheBarImg from "@/assets/food/restaurants/the-bar.jpg";
+import MaksymImg from "@/assets/food/restaurants/maksym.jpg";
+import HTrostianImg from "@/assets/food/restaurants/h-trostian.jpg";
+import KolybaForelImg from "@/assets/food/restaurants/kolyba-forel.jpg";
+import LoftSlavskoImg from "@/assets/food/restaurants/loft-slavsko.jpg";
+import FoodieImg from "@/assets/food/restaurants/foodie.jpg";
+import ChaletFilvarokImg from "@/assets/food/restaurants/chalet-filvarok.jpg";
 
-import BorschImg from "@/assets/food/borshch.jpg";
-import BohrachImg from "@/assets/food/bohrach.jpg";
-import BanoshImg from "@/assets/food/banosh.jpg";
-import HrybnaUshka from "@/assets/food/hrybna-uska.jpg";
+import BorschImg from "@/assets/food/dishes/borshch.jpg";
+import BohrachImg from "@/assets/food/dishes/bohrach.jpg";
+import BanoshImg from "@/assets/food/dishes/banosh.jpg";
+import HrybnaUshka from "@/assets/food/dishes/hrybna-uska.jpg";
+import VarenykyImg from "@/assets/food/dishes/varenyky.jpg";
 
 export const restaurants = [
   {
@@ -139,5 +140,11 @@ export const dishes = [
     title: "Грибна юшка",
     text: "Грибна закарпатська юшка — це смаковита страва, яка втiлює в собi найкращi традицiї гiрської кухнi Закарпаття. Цей густий грибний суп вражає своїм насиченим ароматом i насиченим смаком, який здатний пiдкорити серце кожного гурмана. Основа юшки — це багатий грибний бульйон, в якому плавають нiжнi кусочки грибiв, часто з додаванням картоплi, моркви та цибулi. Смак супу пiдкреслюється спецiями та травами, такими як лавровий лист, петрушка та часник, якi надають юшцi особливої пiкантностi та аромату. Грибна закарпатська юшка готується з любов'ю та ретельною увагою до деталей, традицiйно на вiдкритому вогнi в казанi, що додає їй додаткового шарму та особливого аромату. Ця страва є втiленням тепла, комфорту та гостинностi гiрських мiсцевостей. Запрошуємо вас на смачну подорож в чарiвний свiт закарпатської кухнi, де грибна юшка стане справжньою вiдкриттям для вашого гастрономiчного досвiду!",
     img: HrybnaUshka,
+  },
+  {
+    id: 5,
+    title: "Вареники",
+    text: "Вареники — це автентична українська страва, яка завойовує серця своїм унікальним смаком та ніжністю. Ця страва, що є однією з найпопулярніших українських діж, є втіленням традицій та культури нашої країни. Основа вареників — це тонке тісто, яке ніжно обгортає різноманітні начинки. Від картофельної начинки до тушкованої капусти, від солодкого творогу до ягідних начинок — вареники можуть бути різноманітними та неперевершеними у смаковому плані. Кожен вареник подається з традиційними додатками, такими як сметана, карамелізована цибуля або масло, що підкреслює його особливий смак. Готувати вареники традиційно передбачає залучення всієї родини: від підготовки начинки до формування та варіння вареників. Це не просто страва, але й символ гармонії, щедрості та гостинності. Запрошуємо вас на смачну подорож в світ української кухні, де вареники стануть справжньою відкриттям для вашого гастрономічного досвіду!",
+    img: VarenykyImg,
   },
 ];
