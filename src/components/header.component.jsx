@@ -20,7 +20,7 @@ const Header = ({ className }) => {
     <header
       className={`absolute top-0 w-full h-[48px] px-[80px] flex justify-between items-center z-[1] ${className}`}
     >
-      <Link href="/" className="font-extrabold tracking-[1%] text-[32px]">
+      <Link href="/" className="font-bold tracking-[1%] text-[32px]">
         SLAVSKO
       </Link>
       <nav className="list-none flex gap-x-[30px]">

@@ -30,7 +30,7 @@ const NumberImageText = ({
                 {title}
               </p>
             </div>
-            <h2 className="font-extrabold text-[64px] leading-[70px]">{header}</h2>
+            <h2 className="font-bold text-[64px] leading-[70px]">{header}</h2>
             <p className="text-[18px]">{text}</p>
             <Link href={link} className="flex items-center">
               <p className="text-[#FBD784] text-[18px] mr-[8px] leading-[18px]">
@@ -58,7 +58,7 @@ const NumberImageText = ({
                 {title}
               </p>
             </div>
-            <h2 className="font-extrabold text-[64px] leading-[70px]">{header}</h2>
+            <h2 className="font-bold text-[64px] leading-[70px]">{header}</h2>
             <p className="text-[18px]">{text}</p>
             <Link href={link} className="flex items-center">
               <p className="text-[#FBD784] text-[18px] mr-[8px] leading-[18px]">

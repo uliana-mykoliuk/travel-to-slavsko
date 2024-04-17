@@ -11,7 +11,7 @@ const ImageTextComponent = ({ title, text, img, imgPosition = "left" }) => {
         />
       </div>
       <div className="">
-        <h2 className="font-extrabold text-[64px] leading-[70px] text-accent">
+        <h2 className="font-bold text-[64px] leading-[70px] text-accent">
           {title}
         </h2>
         <p className="text-[18px] mt-[30px]">{text}</p>
@@ -20,7 +20,7 @@ const ImageTextComponent = ({ title, text, img, imgPosition = "left" }) => {
   ) : (
     <section className="grid mx-auto grid-cols-[auto_450px] gap-x-[50px] mb-[100px] items-center">
       <div className="">
-        <h2 className="font-extrabold text-[64px] leading-[70px] text-accent">
+        <h2 className="font-bold text-[64px] leading-[70px] text-accent">
           {title}
         </h2>
         <p className="text-[18px] mt-[30px]">{text}</p>

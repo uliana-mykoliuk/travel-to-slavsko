@@ -13,7 +13,7 @@ const Footer = () => {
     <footer className="grid grid-cols-2">
       <div className="grid flex-col justify-between">
         <div>
-          <p className="font-extrabold tracking-[1%] text-[32px] text-[#FBD784]">
+          <p className="font-bold tracking-[1%] text-[32px] text-[#FBD784]">
             SLAVSKO
           </p>
           <p className="mt-[10px] text-[18px] leading-[32px]">
