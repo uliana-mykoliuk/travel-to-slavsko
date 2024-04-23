@@ -7,7 +7,7 @@ import RestaurantsSlider from "@/components/restaurants-slider.component";
 import { dishes } from "@/mocks/foods.mock";
 import ImageTextComponent from "@/components/image-text.component";
 
-export default function Hotels() {
+export default function Food() {
   return (
     <>
       <Header className="mt-[64px]" />

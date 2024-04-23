@@ -2,6 +2,10 @@ import Link from "next/link";
 
 export const navLinks = [
   {
+    label: "Гори",
+    link: "mountains",
+  },
+  {
     label: "Проживання",
     link: "/hotels",
   },
