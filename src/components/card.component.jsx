@@ -9,6 +9,7 @@ const Card = ({ title, address, bgImg, height }) => {
       } w-full z-[1] relative`}
     >
       <Image
+        alt={title}
         src={bgImg}
         className="w-full h-full object-cover absolute top-0 left-0"
       />
