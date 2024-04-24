@@ -24,7 +24,7 @@ const content = [
   },
   {
     title: "Смакота",
-    header: "Рекомендуємо спробувати мiсцеву кухню",
+    header: "Cпробуйте мiсцеву кухню",
     text: `Вiдчуйте смак гiрської кухнi у наших ресторанах та кафе, якi 
     пропонують автентичнi страви з найсвiжiших iнгредiєнтiв. Вiд 
     традицiйних гуцульських делiкатесiв до сучасних iнтерпретацiй 
@@ -51,9 +51,9 @@ const content = [
 export default function Home() {
   return (
     <>
-      <Header className="mt-[64px]" />
+      <Header className="md:mt-[64px]" />
       <Hero />
-      <div className="grid gap-y-[200px] container mx-auto -mt-[256px] mb-[100px]">
+      <div className="grid gap-y-[50px] md:gap-y-[100px] -mt-[500px]">
         {content.map((contentItem, idx) => {
           const number = idx < 9 ? "0" + (idx + 1) : idx + 1;
           return (

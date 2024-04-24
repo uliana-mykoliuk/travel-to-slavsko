@@ -56,63 +56,40 @@ h5 {
   opacity: 1;
 }
 
-@keyframes fadeInOpacity {
-  0% {
-    opacity: 0;
+
+.container {
+  margin: 0 auto;
+  max-width: 2120px;
+  padding-left: 150px;
+  padding-right: 150px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 2120px) {
+  .container {
+    max-width: none;
   }
-  100% {
-    opacity: 1;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
 
-.h-full__footer {
-  height: calc(100vh - 198px - 64px);
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
 }
 
-.bg-glamping-slavsko {
-  background-image: url("../assets/hotels/glamping-slavsko/glamping-slavsko.jpg");
-}
-
-.bg-zahar-berkut {
-  background-image: url("../assets/hotels/zahar-berkut/zahar_berkut.png");
-}
-
-.bg-agora {
-  background-image: url("../assets/hotels/agora-chalet/agora-chalet.jpg");
-}
-
-.bg-kovalska-sadyba {
-  background-image: url("../assets/hotels/kovalska-sadyba/kovalska-sadyba.jpg");
-}
-
-.bg-sadyba-roksa {
-  background-image: url("../assets/hotels/sadyba-roksa/sadyba-roksa.jpg");
-}
-
-.bg-karpatskyi-caleidoskop {
-  background-image: url("../assets/hotels/karpatsky-caleidoskop/karpatsky-caleidoskop.jpg");
-}
-
-.bg-villa-alpiyka {
-  background-image: url("../assets/hotels/villa-alpiyka/villa-alpiyka.jpg");
-}
-
-.bg-filvarok {
-  background-image: url("../assets/hotels/chalet-filvarok/chalet-filvarok.jpg");
-}
-
-.bg-chilloutzone {
-  background-image: url("../assets/hotels/chilloutzone/chilloutzone.jpg");
-}
-
-.bg-forest-hub {
-  background-image: url("../assets/hotels/forest-hub/forest-hub.jpg");
-}
-
-.bg-mirador-cottage {
-  background-image: url("../assets/hotels/mirador-cottage/mirador-cottage.jpg");
-}
-
-.bg-dvir-kniazhoyi-korony {
-  background-image: url("../assets/hotels/dvir-kniazhoyi-korony/dvir-kniazhoi-korony.jpg");
+@media (max-width: 576px) {
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
