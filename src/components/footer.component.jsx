@@ -1,5 +1,5 @@
+import { navLinks } from "@/mocks/nav-links";
 import Link from "next/link";
-import { navLinks } from "./header.component";
 
 const footerLinks = [
   {

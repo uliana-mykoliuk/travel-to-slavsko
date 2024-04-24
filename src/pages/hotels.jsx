@@ -20,8 +20,8 @@ export default function Hotels() {
         }
         img={HeroBg}
       />
-      <div className="container mx-auto mb-[100px] -mt-[256px]">
-        <div className="grid grid-cols-4 gap-[30px] z-[1] mb-[100px]">
+      <div className="container mx-auto -mt-[500px]">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-[30px] z-[1]">
           {hotels.map((hotel, idx) => (
             <Link
               key={idx}

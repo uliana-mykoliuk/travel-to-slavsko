@@ -17,25 +17,23 @@ export default function Food() {
         img={HeroBg}
       />
       <div className="z-[1] relative py-[100px] -mt-[500px]">
-        <div className="container mx-auto">
-          <div className="grid gap-[100px] mb-[100px]">
-            {dishes.map((dish, idx) => (
-              <ImageTextComponent
-                key={dish.id}
-                {...dish}
-                imgPosition={idx % 2 ? "right" : "left"}
-              />
-            ))}
-          </div>
-          <h2 className="font-bold text-[48px] leading-[70px] text-accent text-center mb-[50px]">
+        <div className="grid gap-[50px] md:gap-[100px]">
+          {dishes.map((dish, idx) => (
+            <ImageTextComponent
+              key={dish.id}
+              {...dish}
+              imgPosition={idx % 2 ? "right" : "left"}
+            />
+          ))}
+        </div>
+        <div className="container mx-auto mt-[50px] md:mt-[100px]">
+          <h2 className="font-bold text-[32px] md:text-[48px] md:leading-[70px] text-accent text-center mb-[50px]">
             Вiдвiдай мiсцевi заклади <br /> i скуштуй смачну карпатську кухню
           </h2>
           <RestaurantsSlider />
         </div>
       </div>
-      <div className="container mx-auto mb-[100px]">
-        <Footer />
-      </div>
+      <Footer />
     </>
   );
 }
