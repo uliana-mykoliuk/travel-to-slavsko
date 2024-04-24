@@ -24,9 +24,28 @@ export default function Page() {
     <>
       <Header />
       <main className="mt-[50px] bg-white overflow-y-auto">
-        <div className="max-w-[1280px] mx-auto px-[50px] py-[100px] h-full grid">
-          <div className="grid grid-cols-2 gap-x-[50px] h-[100%]">
+        <div className="container py-[50px] md:py-[100px] h-full grid">
+          <div className="grid md:grid-cols-2 gap-x-[50px] h-[100%]">
             <Image src={activeImage} className="h-[100%] object-cover" />
+
+            <div className="flex md:hidden justify-between mt-[30px] ">
+              {hotel?.images.map((image, idx) => {
+                return (
+                  <button
+                    key={idx}
+                    type="button"
+                    onClick={() => {
+                      setActiveImage(image);
+                    }}
+                  >
+                    <Image
+                      src={image}
+                      className="w-[75px] h-[75px] object-cover"
+                    />
+                  </button>
+                );
+              })}
+            </div>
             <div>
               <h1 className="text-main text-[48px] font-bold">
                 {hotel?.title}
@@ -39,7 +58,7 @@ export default function Page() {
                 Iнформацiю взято з сайту Booking.com в квiтнi 2024
               </p>
             </div>
-            <div className="flex justify-between mt-[30px]">
+            <div className="flex justify-between mt-[30px] hidden md:flex">
               {hotel?.images.map((image, idx) => {
                 return (
                   <button
