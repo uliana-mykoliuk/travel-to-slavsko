@@ -1,27 +1,23 @@
-import Header from "@/components/header.component";
-import Footer from "@/components/footer.component";
-import Hero from "@/components/hero.component";
 import HeroBg from "@/assets/hotels/hero-bg.jpeg";
 
 import Card from "@/components/card.component";
 import Link from "next/link";
 import { hotels } from "@/mocks/hotels.mock";
+import Layout from "@/components/layout.component";
 
 export default function Hotels() {
   return (
-    <>
-      <Header className="mt-[64px]" />
-      <Hero
-        title={"Шукаєш де заночувати?"}
-        header={
-          <>
-            Готелi, котеджi та будиночки <br /> для вашого вiдпочинку
-          </>
-        }
-        img={HeroBg}
-      />
-      <div className="container mx-auto -mt-[500px]">
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-[30px] z-[1]">
+    <Layout
+      title={"Шукаєш де заночувати?"}
+      header={
+        <>
+          Готелi, котеджi та будиночки <br /> для вашого вiдпочинку
+        </>
+      }
+      bgImg={HeroBg}
+    >
+      <div className="container">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-[30px]">
           {hotels.map((hotel, idx) => (
             <Link
               key={idx}
@@ -39,8 +35,7 @@ export default function Hotels() {
             </Link>
           ))}
         </div>
-        <Footer />
       </div>
-    </>
+    </Layout>
   );
 }

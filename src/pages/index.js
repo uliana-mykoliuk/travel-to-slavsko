@@ -1,13 +1,8 @@
-import { Inter } from "next/font/google";
-import Hero from "@/components/hero.component";
-import Header from "@/components/header.component";
 import NumberImageText from "@/components/number-img-txt.component";
 import HotelsImg from "@/assets/home/hotels.png";
 import FoodImg from "@/assets/home/food.png";
 import EntertainmentImg from "@/assets/home/bike.png";
-import Footer from "@/components/footer.component";
-
-const inter = Inter({ subsets: ["latin"] });
+import Layout from "@/components/layout.component";
 
 const content = [
   {
@@ -50,10 +45,8 @@ const content = [
 
 export default function Home() {
   return (
-    <>
-      <Header className="md:mt-[64px]" />
-      <Hero />
-      <div className="grid gap-y-[50px] md:gap-y-[100px] -mt-[500px]">
+    <Layout>
+      <div className="grid gap-y-[50px] md:gap-y-[100px]">
         {content.map((contentItem, idx) => {
           const number = idx < 9 ? "0" + (idx + 1) : idx + 1;
           return (
@@ -69,8 +62,7 @@ export default function Home() {
             />
           );
         })}
-        <Footer />
       </div>
-    </>
+    </Layout>
   );
 }

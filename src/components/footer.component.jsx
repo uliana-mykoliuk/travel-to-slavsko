@@ -10,7 +10,7 @@ const footerLinks = [
 
 const Footer = () => {
   return (
-    <footer className="grid md:grid-cols-2 gap-y-[15px] gap-x-[50px] container pb-[50px] md:pb-[100px]">
+    <footer className="grid md:grid-cols-2 gap-y-[15px] gap-x-[50px] container pb-[50px] md:pb-[100px] mt-[50px] md:mt-[100px]">
       <div className="grid flex-col justify-items-center md:justify-items-start ">
         <div className="grid justify-items-center md:justify-items-start">
           <p className="font-bold tracking-[1%] text-[32px] text-[#FBD784]">
