@@ -28,7 +28,7 @@ const Footer = () => {
       <nav className="list-none grid gap-y-[15px] justify-self-center justify-items-center md:justify-self-end md:justify-items-end">
         {navLinks?.map((item) => (
           <li key={item.link}>
-            <Link href={item.link} className="text-white text-[18px]">
+            <Link href={item.link} className="text-white text-[18px] font-bold hover:text-accent hover:scale-125 transition-all duration-300 inline-block">
               {item.label}
             </Link>
           </li>

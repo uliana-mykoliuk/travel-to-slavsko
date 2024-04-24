@@ -3,6 +3,7 @@ import HotelsImg from "@/assets/home/hotels.png";
 import FoodImg from "@/assets/home/food.png";
 import EntertainmentImg from "@/assets/home/bike.png";
 import Layout from "@/components/layout.component";
+import "animate.css";
 
 const content = [
   {

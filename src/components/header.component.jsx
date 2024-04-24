@@ -18,18 +18,16 @@ export const Header = ({ className }) => {
       <Link href="/" className="font-bold tracking-[1%] text-[32px]">
         SLAVSKO
       </Link>
-      {/* Desktop navigation */}
       <nav className="list-none gap-x-[30px] hidden md:flex">
         {navLinks?.map((item) => (
           <li key={item.link}>
-            <Link href={item.link} className="text-[18px]">
+            <Link href={item.link} className="text-[18px] font-bold hover:text-accent hover:scale-125 transition-all duration-300 inline-block" >
               {item.label}
             </Link>
           </li>
         ))}
       </nav>
 
-      {/* Mobile burger menu */}
       <div ref={ref} className="md:hidden">
         <Hamburger toggled={isOpen} size={20} toggle={setOpen} />
         <AnimatePresence>
