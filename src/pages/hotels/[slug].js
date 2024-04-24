@@ -14,13 +14,11 @@ export default function Page() {
     (item) => item.id === Number(router.query.slug)
   );
 
-  const { title, images, description, address, bookingLink } = hotel;
-
   useEffect(() => {
-    if (images && images.length > 0) {
-      setActiveImage(images[0]);
+    if (hotel?.images && hotel?.images.length > 0) {
+      setActiveImage(hotel?.images[0]);
     }
-  }, [images]);
+  }, [hotel?.images]);
 
   return (
     <>
@@ -30,15 +28,19 @@ export default function Page() {
           <div className="grid grid-cols-2 gap-x-[50px] h-[100%]">
             <Image src={activeImage} className="h-[100%] object-cover" />
             <div>
-              <h1 className="text-main text-[48px] font-bold">{title}</h1>
-              <address className="text-accent">{address}</address>
-              <p className="text-main text-[18px] mt-[15px]">{description}</p>
+              <h1 className="text-main text-[48px] font-bold">
+                {hotel?.title}
+              </h1>
+              <address className="text-accent">{hotel?.address}</address>
+              <p className="text-main text-[18px] mt-[15px]">
+                {hotel?.description}
+              </p>
               <p className="text-[#cacaca] text-[14px] mt-[30px]">
                 Iнформацiю взято з сайту Booking.com в квiтнi 2024
               </p>
             </div>
             <div className="flex justify-between mt-[30px]">
-              {images.map((image, idx) => {
+              {hotel?.images.map((image, idx) => {
                 return (
                   <button
                     key={idx}
@@ -56,13 +58,15 @@ export default function Page() {
               })}
             </div>
             <div className="flex mt-[30px] items-end">
-              <Link
-                href={bookingLink}
-                target="blank"
-                className="inline-block bg-[#003b95] py-[15px] px-[20px] h-auto"
-              >
-                Забронюй номер на Booking.com
-              </Link>
+              {hotel?.bookingLink && (
+                <Link
+                  href={hotel?.bookingLink}
+                  target="blank"
+                  className="inline-block bg-[#003b95] py-[15px] px-[20px] h-auto"
+                >
+                  Забронюй номер на Booking.com
+                </Link>
+              )}
             </div>
           </div>
         </div>

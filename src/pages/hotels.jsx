@@ -23,7 +23,7 @@ export default function Hotels() {
               key={idx}
               href={{
                 pathname: "/hotels/[slug]",
-                query: { slug: hotel.id },
+                query: { slug: hotel?.id },
               }}
               className="z-[1]"
             >
