@@ -35,7 +35,7 @@ const Footer = () => {
         ))}
         {footerLinks?.map((item) => (
           <li key={item.link}>
-            <Link href={item.link} className="text-white text-[18px]">
+            <Link href={item.link} className="text-white text-[18px] hidden">
               {item.label}
             </Link>
           </li>

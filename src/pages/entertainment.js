@@ -28,21 +28,21 @@ export default function Entertainment() {
         breakpoint: 1280,
         settings: {
           slidesToShow: 3,
-        }
+        },
       },
       {
         breakpoint: 980,
         settings: {
           slidesToShow: 2,
-        }
+        },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
-        }
-      }
-    ]
+        },
+      },
+    ],
   };
 
   return (
@@ -54,43 +54,39 @@ export default function Entertainment() {
         img={HeroBg}
       />
       <div className="z-[1] relative py-[100px] -mt-[500px]">
-        <div className="container mx-auto ">
-          {entertainmants.map((entertainmant, idx) => (
-            <div key={entertainmant.id} className="mb-[100px]">
-              <ImageTextComponent
-                img={entertainmant.img}
-                title={entertainmant.title}
-                text={entertainmant.description}
-                imgPosition={idx % 2 ? "right" : "left"}
-              />
-              {entertainmant?.places && entertainmant?.places?.length > 0 && (
-                <section className="slider-container mt-[50px]">
-                  <Slider {...settings}>
-                    {entertainmant?.places.map((place, idx) => (
-                      <Link
-                        key={place.id}
-                        target="blank"
-                        href={place.link}
-                        className="z-[1] px-[15px] h-full"
-                      >
-                        <Card
-                          title={place.title}
-                          address={place.address}
-                          bgImg={place.img}
-                          height="small"
-                        />
-                      </Link>
-                    ))}
-                  </Slider>
-                </section>
-              )}
-            </div>
-          ))}
-        </div>
+        {entertainmants.map((entertainmant, idx) => (
+          <div key={entertainmant.id} className="mb-[100px]">
+            <ImageTextComponent
+              img={entertainmant.img}
+              title={entertainmant.title}
+              text={entertainmant.description}
+              imgPosition={idx % 2 ? "right" : "left"}
+            />
+            {entertainmant?.places && entertainmant?.places?.length > 0 && (
+              <section className="slider-container mt-[50px]">
+                <Slider {...settings}>
+                  {entertainmant?.places.map((place, idx) => (
+                    <Link
+                      key={place.id}
+                      target="blank"
+                      href={place.link}
+                      className="z-[1] px-[15px] h-full"
+                    >
+                      <Card
+                        title={place.title}
+                        address={place.address}
+                        bgImg={place.img}
+                        height="small"
+                      />
+                    </Link>
+                  ))}
+                </Slider>
+              </section>
+            )}
+          </div>
+        ))}
       </div>
-      <div className="container mx-auto mb-[100px]">
-        <Footer />
-      </div>
+      <Footer />
     </>
   );
 }
