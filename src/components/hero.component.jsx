@@ -42,9 +42,9 @@ const Hero = ({
         <button
           type="button"
           onClick={scrollToNextSection}
-          className="text-white animate__animated animate__fadeInDown animate__delay-3s"
+          className="text-white animate__animated animate__fadeInDown animate__delay-3s justify-self-start"
         >
-          <div className="flex items-center gap-x-[16px] font-bold hover:text-accent hover:scale-125 transition-all duration-300 hover:translate-x-20">
+          <div className="flex items-center gap-x-[16px] font-bold hover:text-accent hover:scale-125 transition-all duration-300 hover:translate-x-6">
             <p className="text-[16px] md:text-[18px]">прокручуйте вниз </p>
             <span className="text-[36px]">&darr;</span>
           </div>

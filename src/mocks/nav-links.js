@@ -1,7 +1,7 @@
 export const navLinks = [
   {
     label: "Гори",
-    link: "mountains",
+    link: "/mountains",
   },
   {
     label: "Проживання",
@@ -9,10 +9,10 @@ export const navLinks = [
   },
   {
     label: "Їжа",
-    link: "food",
+    link: "/food",
   },
   {
     label: "Розваги",
-    link: "entertainment",
+    link: "/entertainment",
   },
 ];
